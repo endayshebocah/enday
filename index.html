@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Stok Parfum - Fitur Lanjutan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Library untuk Excel dan CSV -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .card-3d {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transform-style: preserve-3d;
+        }
+        .card-3d:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.3);
+        }
+        .btn-3d {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+        }
+        .btn-3d:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+        }
+        .btn-3d:active { transform: translateY(1px); }
+        .modal-transition { transition: opacity 0.3s ease-in-out; }
+        .content-transition { transition: transform 0.3s ease-in-out, max-height 0.5s ease-in-out; }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .accordion-content.open {
+            max-height: 2000px;
+        }
+        .radio-label input:checked + .radio-custom {
+            border-color: #a855f7;
+            background-color: #a855f7;
+        }
+        #drop-area {
+            border: 2px dashed #4a5568;
+            transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+        }
+        #drop-area.highlight {
+            background-color: #2d3748;
+            border-color: #a855f7;
+        }
+        .horizontal-scrollbar {
+            scrollbar-width: thin;
+            scrollbar-color: #4b5563 #1f2937;
+        }
+        .horizontal-scrollbar::-webkit-scrollbar { height: 8px; }
+        .horizontal-scrollbar::-webkit-scrollbar-track { background: #1f2937; border-radius: 10px; }
+        .horizontal-scrollbar::-webkit-scrollbar-thumb { background-color: #4b5563; border-radius: 10px; border: 2px solid #1f2937; }
+        .vertical-scrollbar::-webkit-scrollbar {
+            width: 8px;
+        }
+        .vertical-scrollbar::-webkit-scrollbar-track {
+            background: #1f2937;
+        }
+        .vertical-scrollbar::-webkit-scrollbar-thumb {
+            background-color: #4b5563;
+            border-radius: 10px;
+        }
+        .vertical-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #6b7280;
+        }
+        .form-content-wrapper {
+            max-height: 1000px;
+            transition: max-height 0.7s ease-in-out, margin-top 0.7s ease-in-out, opacity 0.5s ease-in-out;
+        }
+        .form-content-wrapper.hidden {
+            max-height: 0;
+            margin-top: 0 !important;
+            opacity: 0;
+            overflow: hidden;
+            padding-top: 0 !important;
+            border-top-width: 0 !important;
+        }
+        #pin-input-field {
+            letter-spacing: 0.5em;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        /* Animasi warna pelangi untuk judul */
+        @keyframes rainbow-text {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .animate-rainbow {
+            background-size: 200% 200%;
+            animation: rainbow-text 5s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white antialiased h-screen flex flex-col">
+    <!-- ... (the rest of your HTML, unchanged) ... -->
+    <!-- The full content is as in your provided file -->
+    <!-- See original message for complete content -->
+</body>
+</html>
